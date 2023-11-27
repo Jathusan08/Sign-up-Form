@@ -14,3 +14,88 @@ body {
   height: 100%;
   overscroll-behavior: none;
 }
+
+@font-face {
+  font-family: "Norse";
+  src: url("https://db.onlinewebfonts.com/t/fd1ad3a0f95210975d2f5607501020b5.eot");
+  src: url("https://db.onlinewebfonts.com/t/fd1ad3a0f95210975d2f5607501020b5.eot?#iefix")
+      format("embedded-opentype"),
+    url("https://db.onlinewebfonts.com/t/fd1ad3a0f95210975d2f5607501020b5.woff2")
+      format("woff2"),
+    url("https://db.onlinewebfonts.com/t/fd1ad3a0f95210975d2f5607501020b5.woff")
+      format("woff"),
+    url("https://db.onlinewebfonts.com/t/fd1ad3a0f95210975d2f5607501020b5.ttf")
+      format("truetype"),
+    url("https://db.onlinewebfonts.com/t/fd1ad3a0f95210975d2f5607501020b5.svg#Norse")
+      format("svg");
+}
+
+.main-container {
+  display: flex;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+
+.img-container {
+  position: relative;
+  width: 28%;
+  height: 100%;
+}
+
+.img-container > img {
+  width: 100%;
+  height: 100%;
+}
+
+.img-container > .text-block {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+
+  width: 100%;
+  height: 105px;
+  top: 128px;
+  background-color: rgba(0, 0, 0, 0.5); /* Black background with 50% opacity */
+  color: #ffffff; /* White text color */
+}
+
+.text-block > .Odin-Icon {
+  height: 90%;
+}
+
+.text-block > .Odin-Icon > img {
+  height: 100%;
+  width: 100%;
+}
+
+.text-block > .Odin-Text {
+  color: white;
+  font-weight: 900;
+  font-family: "Norse";
+
+  font-size: 4rem;
+  height: 90%;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.img-container > .photographer {
+  width: 100%;
+  color: #bbb9b6;
+  position: absolute;
+  bottom: 10px;
+  text-align: center;
+  font-size: 0.95rem;
+}
+
+.img-container > .photographer > span {
+  text-decoration: underline;
+}
+
+.secondary-container {
+  flex: 1;
+}
