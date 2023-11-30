@@ -73,7 +73,8 @@ body {
 .text-block > .Odin-Text {
   color: white;
   font-weight: 900;
-  font-family: "Norse";
+  font-family: "Norse", system-ui, "Segoe UI", Roboto, Helvetica, Arial,
+    sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
 
   font-size: 4rem;
   height: 90%;
@@ -98,4 +99,128 @@ body {
 
 .secondary-container {
   flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.text-section,
+.button-section {
+  width: auto;
+  flex: 1;
+}
+
+.text-section,
+.button-section {
+  background-color: #f9fafb;
+  padding-left: 30px;
+}
+
+.form-section {
+  background-color: #ffffff;
+  height: 35%;
+  padding-left: 30px;
+}
+
+.secondary-container > .text-section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  font-weight: bolder;
+  font-size: 1.2rem;
+}
+
+.form-section {
+  font-size: 1.2rem;
+  font-weight: bolder;
+}
+
+.form-section p {
+  margin-bottom: 15px;
+  margin-top: 15px;
+  color: #2d3643;
+}
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.component-layout {
+  display: flex;
+  gap: 150px;
+  height: 45px;
+}
+
+label {
+  font-size: 0.7rem;
+  color: #37404b;
+}
+
+input {
+  border: 1px solid #e5e7eb;
+  height: 25px;
+  border-radius: 4px;
+}
+
+input:focus {
+  appearance: none;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  border: 3px solid #5277df;
+}
+
+input:invalid {
+  border: 1px solid red;
+}
+
+.error {
+  font-size: 0.6rem;
+  font-weight: lighter;
+}
+
+input:invalid + .error::after {
+  content: "* Passwords do not match";
+  color: red;
+}
+
+/* input:valid + .error::after {
+  content: "✓";
+  color: green;
+} */
+
+.first-name,
+.last-name,
+.email,
+.phone,
+.password,
+.confirm-password {
+  display: flex;
+  flex-direction: column;
+  width: 30%;
+}
+
+.button-section {
+  position: relative;
+}
+
+button {
+  position: absolute;
+  top: 23px;
+  background-color: #596d48;
+  color: #f9fafb;
+  text-align: center;
+  width: 175px;
+  height: 40px;
+  border-radius: 10px;
+  border: none;
+}
+
+.button-section > p {
+  font-size: 0.9rem;
+  position: absolute;
+  top: 73px;
+}
+
+.button-section > p > span {
+  color: #596d48;
+  font-weight: bold;
 }
