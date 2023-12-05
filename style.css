@@ -117,7 +117,7 @@ body {
 
 .form-section {
   background-color: #ffffff;
-  height: 35%;
+  height: 39%;
   padding-left: 30px;
 }
 
@@ -168,24 +168,25 @@ input:focus {
   border: 3px solid #5277df;
 }
 
-input:invalid {
+input[id~="password"]:invalid,
+input[id~="confirm-password"]:invalid {
   border: 1px solid red;
 }
 
 .error {
   font-size: 0.6rem;
   font-weight: lighter;
+  color: red;
 }
 
-input:invalid + .error::after {
+input[id~="password"]:invalid + .error::after {
   content: "* Passwords do not match";
   color: red;
 }
 
-/* input:valid + .error::after {
-  content: "✓";
-  color: green;
-} */
+.message {
+  font-size: 1rem;
+}
 
 .first-name,
 .last-name,
