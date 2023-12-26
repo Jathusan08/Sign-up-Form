@@ -6,7 +6,7 @@ Intermediate-Odin project
 
 ## Introduction
 
-Welcome to the Sign-up Form project, part of the Intermediate HTML and CSS Course. This project provides an opportunity for you to apply the knowledge gained from recent lessons by creating a sign-up form for an imaginary service.
+Welcome to the Sign-up Form project, part of the Intermediate HTML and CSS Course. This project provides an opportunity for me to apply the knowledge gained from recent lessons by creating a sign-up form for an imaginary service.
 
 Sign-up Form project created with HTML, CSS and Javascript.
 
